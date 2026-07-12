@@ -1,0 +1,62 @@
+{
+  "elements": [
+    {
+      "type": "ValidationTextBox",
+      "name": "Host",
+      "caption": "Host or IP address"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "APIPort",
+      "caption": "Control API port",
+      "minimum": 1,
+      "maximum": 65535
+    },
+    {
+      "type": "CheckBox",
+      "name": "UseHTTPS",
+      "caption": "Use HTTPS"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "UpdateInterval",
+      "caption": "Update interval in seconds",
+      "minimum": 5,
+      "maximum": 3600
+    },
+    {
+      "type": "CheckBox",
+      "name": "VerifyTLS",
+      "caption": "Verify TLS certificate"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Button",
+      "caption": "Test connection",
+      "onClick": "MMTX_Update($id);"
+    }
+  ],
+  "status": [
+    {
+      "code": 102,
+      "icon": "active",
+      "caption": "Active"
+    },
+    {
+      "code": 200,
+      "icon": "error",
+      "caption": "Host is missing"
+    },
+    {
+      "code": 201,
+      "icon": "error",
+      "caption": "Control API is not reachable"
+    },
+    {
+      "code": 202,
+      "icon": "error",
+      "caption": "Invalid API response"
+    }
+  ]
+}

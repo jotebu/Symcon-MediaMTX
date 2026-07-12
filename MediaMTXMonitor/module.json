@@ -1,0 +1,13 @@
+{
+  "id": "{2E8A1B5E-7C42-4F65-9B32-3A8B28D6D1F7}",
+  "name": "MediaMTX Monitor",
+  "type": 3,
+  "vendor": "MediaMTX",
+  "aliases": [
+    "MediaMTX Monitor"
+  ],
+  "parentRequirements": [],
+  "childRequirements": [],
+  "implemented": [],
+  "prefix": "MMTX"
+}
